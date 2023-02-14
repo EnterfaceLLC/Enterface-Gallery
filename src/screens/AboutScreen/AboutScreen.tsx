@@ -2,7 +2,7 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 
-//* STYLES IMPORTS \\
+//* STYLES, THEME, ICON IMPORTS \\
 import { styles } from './styles';
 
 //* ABOUT SCREEN CODE BELOW \\
