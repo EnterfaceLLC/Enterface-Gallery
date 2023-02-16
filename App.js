@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 // import { StatusBar } from 'expo-status-bar';
 //* NAVIGATION IMPORT \\
 import Navigation from './src/navigation/Navigation';
