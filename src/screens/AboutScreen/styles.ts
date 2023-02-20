@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   name: {
-    fontSize: 18,
+    fontSize: 20,
     color: global.accent,
     marginVertical: 10,
   },

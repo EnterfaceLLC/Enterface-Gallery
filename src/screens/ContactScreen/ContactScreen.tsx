@@ -39,7 +39,7 @@ const ContactScreen = () => {
         </View>
       </View>
     </View>
-  )
-}
+  );
+};
 
 export default ContactScreen;

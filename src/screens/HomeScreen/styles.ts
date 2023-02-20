@@ -13,12 +13,11 @@ export const styles = StyleSheet.create({
     backgroundColor: global.primary,
   },
   header: {
-    // backgroundColor: 'grey',
     paddingVertical: 20,
     alignItems: 'center',
   },
   headerTxt: {
-    fontSize: 18,
+    fontSize: 20,
     color: global.accent,
     marginTop: 10,
   },
