@@ -9,18 +9,25 @@ const { height, width } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   page: {
-    flex: 1,
-    backgroundColor: global.primary,
+    // flex: 1,
+    // backgroundColor: global.white,
   },
-  text: {
-    color: global.accent,
-    fontSize: 20,
-    padding: 5,
-    textAlign: 'center',
+  shape: {
+    backgroundColor: global.secondary,
+    width: 60,
+    height: 60,
+    position: 'absolute',
+    top: 30,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    elevation: 3
   },
-  footerTxt: {
+  click: {
     color: global.greyL,
-    marginTop: 'auto',
     textAlign: 'center',
-  },
-}); 
+    fontSize: 12
+
+  }
+});

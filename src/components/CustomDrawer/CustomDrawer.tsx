@@ -24,7 +24,7 @@ const CustomDrawer = (props) => {
       </DrawerContentScrollView>
 
       <View style={styles.drawerView}>
-        <Text>ENTERFACE LLC 2023</Text>
+        <Text>ENTERFACE</Text>
       </View>
     </View>
   );

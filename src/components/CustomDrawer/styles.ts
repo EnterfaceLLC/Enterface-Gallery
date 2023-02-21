@@ -26,6 +26,9 @@ export const styles = StyleSheet.create({
     marginLeft: 10,
     borderBottomLeftRadius: 50,
     borderTopRightRadius: 50,
+    borderTopWidth: 4,
+    borderRightWidth: 4,
+    borderColor: global.secondary,
     elevation: 3,
   }
 });
