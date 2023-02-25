@@ -20,9 +20,10 @@ export const global = {
 
 
 export const entity1 = {
-  primary: '#', //*
-  secondary: '#', //*
-  tertiary: '#', //*
+  primary: '#0F2169', //* Royal Blue
+  secondary: '#e1bc66', //* Equator
+  light: '#DCE0E5', //* Platinum
+  tertiary: '#25598F', //* Lapis Lazuli
 };
 
 export const entity2 = {

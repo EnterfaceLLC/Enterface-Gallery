@@ -16,21 +16,34 @@ export const styles = StyleSheet.create({
     paddingVertical: 20,
     alignItems: 'center',
   },
-  headerTxt: {
-    fontSize: 20,
-    color: global.accent,
-    marginTop: 10,
-  },
-  dots: {
-    color: global.secondary
-  },
   logo: {
     width: 200,
     height: 200,
+    marginBottom: 20,
     borderRadius: 100,
     backgroundColor: global.white,
     borderWidth: 3,
     borderColor: global.accent,
     elevation: 3,
+  },
+  slogan: {
+    fontSize: 22,
+    color: global.accent,
+  },
+  dots: {
+    color: global.secondary
+  },
+  body: {
+    color: global.greyL,
+    fontSize: 16,
+    lineHeight: 22,
+    paddingHorizontal: 25,
+    textAlign: 'justify',
+  },
+  name: {
+    color: global.accent,
+  },
+  icon: {
+    alignSelf: 'center',
   }
 });

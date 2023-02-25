@@ -1,44 +1,46 @@
 //* REACT IMPORTS \\
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, Animated, Platform, Linking } from 'react-native';
+import { View, TouchableOpacity, Animated, Platform, Linking, Dimensions } from 'react-native';
 
 //* EXPO IMPORTS \\
 import * as WebBrowser from 'expo-web-browser';
 
 //* STYLES, THEME, ICON IMPORTS \\
 import { styles } from './styles';
-import { global } from '../../theme/colors';
+import { entity1, global } from '../../theme/colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 
 //* FAB CODE BELOW \\
-const FloatingButton = () => {
-  const [icon1] = useState(new Animated.Value(30));
-  const [icon2] = useState(new Animated.Value(30));
-  const [icon3] = useState(new Animated.Value(30));
-  const [icon4] = useState(new Animated.Value(30));
+const { height, width } = Dimensions.get('window');
+
+const FloatingButton2 = () => {
+  const [icon1] = useState(new Animated.Value(10));
+  const [icon2] = useState(new Animated.Value(15));
+  const [icon3] = useState(new Animated.Value(15));
+  const [icon4] = useState(new Animated.Value(10));
 
   const [expanded, setExpanded] = useState(false);
 
   const expandView = () => {
     setExpanded(true);
     Animated.timing(icon1, {
-      toValue: 150,
+      toValue: 90,
       duration: 500,
       useNativeDriver: false,
     }).start();
     Animated.timing(icon2, {
-      toValue: 250,
+      toValue: 180,
       duration: 500,
       useNativeDriver: false,
     }).start();
     Animated.timing(icon3, {
-      toValue: 350,
+      toValue: 260,
       duration: 500,
       useNativeDriver: false,
     }).start();
     Animated.timing(icon4, {
-      toValue: 450,
+      toValue: 170,
       duration: 500,
       useNativeDriver: false,
     }).start();
@@ -47,32 +49,28 @@ const FloatingButton = () => {
   const closeView = () => {
     setExpanded(false);
     Animated.timing(icon1, {
-      toValue: 30,
+      toValue: 10,
       duration: 500,
       useNativeDriver: false,
     }).start();
     Animated.timing(icon2, {
-      toValue: 30,
+      toValue: 15,
       duration: 500,
       useNativeDriver: false,
     }).start();
     Animated.timing(icon3, {
-      toValue: 30,
+      toValue: 15,
       duration: 500,
       useNativeDriver: false,
     }).start();
     Animated.timing(icon4, {
-      toValue: 30,
+      toValue: 10,
       duration: 500,
       useNativeDriver: false,
     }).start();
   };
 
-  const fbPress = () => {
-    WebBrowser.openBrowserAsync(
-      'https://www.facebook.com/dotEnterface'
-    );
-  };
+
 
   const tweetPress = () => {
     WebBrowser.openBrowserAsync(
@@ -99,42 +97,41 @@ const FloatingButton = () => {
   };
 
   return (
-    <View style={styles.page}>
-      <Animated.View style={[styles.shape, { top: icon1 }]}>
-        <TouchableOpacity onPress={fbPress}>
-          <Entypo name="facebook-with-circle" size={50} color={global.primary} />
+    <View style={styles.page2}>
+      <Animated.View style={[styles.shape2, { left: icon1 }]}>
+        <TouchableOpacity onPress={null}>
+          <Entypo name="calendar" size={35} color={entity1.secondary} />
         </TouchableOpacity>
       </Animated.View>
 
-      <Animated.View style={[styles.shape, { top: icon2 }]}>
+      {/* <Animated.View style={[styles.shape2, { bottom: icon2 }]}>
         <TouchableOpacity onPress={tweetPress}>
-          <Entypo name="twitter-with-circle" size={50} color={global.primary} />
+          <Entypo name="twitter-with-circle" size={50} color={entity1.secondary} />
         </TouchableOpacity>
       </Animated.View>
 
-      <Animated.View style={[styles.shape, { top: icon3 }]}>
+      <Animated.View style={[styles.shape2, { bottom: icon3 }]}>
         <TouchableOpacity onPress={igPress}>
-          <Entypo name="instagram-with-circle" size={50} color={global.primary} />
+          <Entypo name="instagram-with-circle" size={50} color={entity1.secondary} />
         </TouchableOpacity>
-      </Animated.View>
+      </Animated.View> */}
 
-      <Animated.View style={[styles.shape, { top: icon4 }]}>
+      <Animated.View style={[styles.shape2, { left: icon4 }]}>
         <TouchableOpacity onPress={dialPress}>
-          <Entypo name="phone" size={40} color={global.primary} />
+          <Entypo name="phone" size={40} color={entity1.secondary} />
         </TouchableOpacity>
       </Animated.View>
 
       <TouchableOpacity
-        style={styles.shape}
+        style={styles.shape2}
         onPress={() => {
           expanded === false ? expandView() : closeView();
         }}
       >
-        <MaterialCommunityIcons name="plus" size={40} color={global.primary} />
+        <MaterialCommunityIcons name="plus" size={40} color={entity1.secondary} />
       </TouchableOpacity>
-      <Text style={styles.click}>CLICK!</Text>
     </View>
   )
 }
 
-export default FloatingButton;
+export default FloatingButton2;

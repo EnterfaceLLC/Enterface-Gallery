@@ -20,15 +20,24 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 50,
     elevation: 3,
   },
+  drawerView1: {
+    backgroundColor: global.accent,
+    height: 100,
+    marginLeft: 10,
+    borderRadius: 10,
+    elevation: 3,
+    marginBottom: 25
+  },
   drawerView: {
-    backgroundColor: global.white,
+    backgroundColor: global.secondary,
     height: 200,
     marginLeft: 10,
     borderBottomLeftRadius: 50,
     borderTopRightRadius: 50,
-    borderTopWidth: 4,
-    borderRightWidth: 4,
-    borderColor: global.secondary,
     elevation: 3,
-  }
+  },
+  text: {
+    color: global.white,
+    padding: 5
+  },
 });

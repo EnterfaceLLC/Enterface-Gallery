@@ -23,8 +23,12 @@ const CustomDrawer = (props) => {
         />
       </DrawerContentScrollView>
 
+      <View style={styles.drawerView1}>
+        <Text style={styles.text}>ENTERFACE</Text>
+      </View>
+
       <View style={styles.drawerView}>
-        <Text>ENTERFACE</Text>
+        <Text style={styles.text}>ENTERFACE</Text>
       </View>
     </View>
   );

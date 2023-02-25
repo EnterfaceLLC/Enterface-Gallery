@@ -22,7 +22,7 @@ import Entity4 from "../screens/Entity4";
 import CustomDrawer from "../components/CustomDrawer";
 
 //* STYLES, THEME, ICON IMPORTS \\
-import { global } from "../theme/colors";
+import { global, entity1 } from "../theme/colors";
 
 //* NAVIGATION CODE BELOW \\
 const Draw = createDrawerNavigator();
@@ -55,6 +55,11 @@ const DrawerNav = () => {
         <Draw.Screen
           name="Entity1"
           component={Entity1}
+          options={{
+            title: 'Barber Shop',
+            headerTitle: 'Top Hands Barber Studio',
+            headerStyle: { backgroundColor: 'white' }
+          }}
         />
         <Draw.Screen
           name="Entity2"
