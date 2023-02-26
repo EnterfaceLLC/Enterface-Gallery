@@ -11,7 +11,7 @@ import { entity1, global } from '../../theme/colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 
-//* FAB CODE BELOW \\
+//* FAB2 CODE BELOW \\
 const { height, width } = Dimensions.get('window');
 
 const FloatingButton2 = () => {
